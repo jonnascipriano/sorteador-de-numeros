@@ -90,6 +90,7 @@ body::before{
     font-size: .6em;
     border: none;
     border-radius: 20px;
+    margin: 5px;
 }
 
 .button_ativado{
