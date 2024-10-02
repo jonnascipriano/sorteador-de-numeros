@@ -112,4 +112,8 @@ img#ia{
     img{
         display: none;
     }
+
+    #botoes button{
+        margin: 5px;
+    }
 }
