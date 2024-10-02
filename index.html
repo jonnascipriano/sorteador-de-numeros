@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <title>Sorteador de Números</title>
+</head>
+<body>
+    <section id="container">
+        <h1>Sorteador<br>de<br>números</h1>
+
+        <div id="container_sorteio">
+            <label for="quantidade" class="inp-sorteio">Quantidade:
+                <input type="number" name="quantidade" id="quantidade">
+            </label>
+            <label for="de" class="inp-sorteio">Do número:
+                <input type="number" name="de" id="de">
+            </label>
+            <label for="ate" class="inp-sorteio">Até o número:
+                <input type="number" name="ate" id="ate">
+            </label>
+        </div>
+
+        <div id="botoes">
+            <button onclick="sortear()" id="btn-sort" class="button_ativado">Sortear</button>
+            <button onclick="reiniciar()" id="btn-rein" class="button_desativado">Reiniciar</button>
+        </div>
+
+        <p id="resultado"></p>
+    </section>
+    <img src="img/ia.png" id="ia" alt="robozinho inteligencia artificial">
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    font-size: 100%;
+    --font1: "Exo", sans-serif;
+    --font2: "Orbitron", sans-serif;
+}
+
+body{
+    width: 80%;
+    height: 100vh;
+    background: #1354A5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before{
+    background-image: url("img/code.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+    font-family: var(--font1);
+    text-align: center;
+}
+
+#container h1{
+    font-family: var(--font2);
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: start;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid;
+}
+
+#container_sorteio{
+    display: flex;
+    flex-direction: column;
+}
+
+#container_sorteio label{
+    padding: 10px 0px;
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#container_sorteio input{
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 80px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #00918e;
+}
+
+#botoes button{
+    padding: 1rem 2.2rem;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: .6em;
+    border: none;
+    border-radius: 20px;
+}
+
+.button_ativado{
+    background-color: #46e0fc;
+    cursor: pointer;
+}
+
+.button_desativado{
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+img#ia{
+    width: 50%;
+}
+
+
+@media screen and (max-width: 600px) {
+    img{
+        display: none;
+    }
+}
